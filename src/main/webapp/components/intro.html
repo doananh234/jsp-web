@@ -1,0 +1,37 @@
+<script type="text/javascript">
+	function createIntro() {
+		var components = [];
+		var str = 'wellcome!';
+		for (var i = 0; i < str.length; i++) {
+			components.push(
+				'<span class="wow lightSpeedIn" data-wow-duration="'+i*0.5+'s" data-wow-delay="'+(str.length-i)*0.5+'s" data-wow-iteration="2">'+str.charAt(i)+'</span>'
+			);
+		}
+		 $("#wellcome").html('<h1  class="wow fadeOut" style="color: white;" data-wow-duration="2s" data-wow-delay="'+(str.length+1)*0.5+'s" data-wow-iteration="1">'+components.join('')+'</h1>');
+	}
+	$(document).ready(function(){
+    createIntro();
+});
+</script>
+<div id="wellcome"></div>
+
+<!-- <p>
+	<span class="wow lightSpeedIn" data-wow-duration="2s" data-wow-delay="3s" data-wow-iteration="5">W</span>
+	<span>e</span>
+	<span>l</span>
+	<span>l</span>
+	<span>c</span>
+	<span>o</span>
+	<span>m</span>
+	<span>e</span>
+</p>
+<div data-wow-delay="0.5s" class="wow rollIn">
+        <img src="http://mynameismatthieu.com/WOW/img/wow-3.gif" height="200">
+    </div>
+<div data-wow-delay="1s" class="wow bounceInDown center">
+        <img src="http://mynameismatthieu.com/WOW/img/wow-4.gif" height="200">
+    </div>
+<div data-wow-delay="1.5s" class="wow bounceInRight">
+        <img src="http://mynameismatthieu.com/WOW/img/wow-9.gif" height="200">
+    </div>
+</div><div class="wow bounce" data-wow-duration="2s" data-wow-delay="3s" data-wow-iteration="5">Hello! Xin chào các bạn đến với BlogIT.vn!!!</div> -->
